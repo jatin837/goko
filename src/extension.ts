@@ -19,7 +19,11 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('This is my first vscode extension');
 	});
 
-	context.subscriptions.push(disposable);
+	let disposable2 = vscode.commands.registerCommand("goko.anotherOne", () => {
+		vscode.window.showInputBox().then((val) => console.log(`did you entered ${val}`));
+	});
+
+	context.subscriptions.push(disposable, disposable2);
 }
 
 // this method is called when your extension is deactivated
