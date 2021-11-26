@@ -18,6 +18,10 @@
 			{
 				"command": "goko.helloWorld",
 				"title": "Hello World"
+			},
+			{
+				"command": "goko.anotherOne",
+				"title": "Another One"
 			}
 		]
 	},
